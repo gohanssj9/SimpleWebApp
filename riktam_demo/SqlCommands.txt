@@ -1,0 +1,23 @@
+#table creation.
+
+CREATE TABLE IF NOT EXISTS `student` (
+`student_id` int(11) NOT NULL AUTO_INCREMENT,
+`student_name` varchar(50) NOT NULL,
+`student_age` int(11) NOT NULL,
+`student_college` varchar(30) NOT NULL,
+`student_dept` varchar(30) NOT NULL,
+PRIMARY KEY (`student_id`)
+);
+
+#insertion
+INSERT INTO `student` (`student_id`, `student_name`, `student_age`, `student_college`,`student_dept`) VALUES
+(1, 'Tixon', 16, 'ANITS','CSE'),
+(2, 'Gaters', 18, 'ANITS','ECE'),
+(3, 'Ashox', 15, 'MVGR','CSE'),
+(4, 'Cedy', 23, 'ANITS','MECH'),
+(5, 'Airu', 20, 'GMRIT','CSE'),
+(6, 'Brins', 21, 'GMRIT','ECE'),
+(7, 'Herer', 22, 'MVGR','CSE'),
+(8, 'Rhoson', 19, 'ANITS','EEE'),
+(9, 'Colrst', 18, 'ANITS','IT'),
+(10, 'Sonst', 14, 'ANITS','CHEM');
